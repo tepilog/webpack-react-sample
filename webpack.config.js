@@ -5,7 +5,7 @@ module.exports = {
   module: { // webpack に対してビルド時に追加で行う処理。tsファイルに、ts-loaderを実行する
     rules: [
       {
-        test: /\.tsx$/,
+        test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/, // 対象除外ファイル
       },
